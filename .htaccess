@@ -6,8 +6,3 @@ RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
 
 # To keep this running on the server, use the following command:
 # nohup npm start & 
-
-# To force www. and non www. to use https://
-RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
