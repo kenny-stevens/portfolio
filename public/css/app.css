@@ -3,4 +3,65 @@
 .heading {
 	text-transform: uppercase;
 	text-align: center;
+	color: white;
+}
+
+body {
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+/*.container {
+	css smooth scroll
+}*/
+
+
+.home-background {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100vh;
+	height: 100vh;
+	z-index: -1;
+}
+
+/*@media (min-aspect-ratio: 16/9) {
+	.home-background {
+		width: 100vh;
+		height: auto;
+	}
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.home-background {
+		width: auto;
+		height: 10vh;
+	}
+}*/
+
+#bottom-arrow-home {
+	color: white;
+	text-align: center;
+	position: bottom-left;
+}
+
+.row {
+	flex-direction: column;
+	/*padding-top: 4rem;*/
+	/*flex-direction: center;*/
+	/*align-items: center;*/
+	justify-content: center;
+	height: 100vh;
+}
+
+#home {
+	flex-direction: column;
+	/*padding-top: 4rem;*/
+	/*flex-direction: center;*/
+	/*align-items: center;*/
+	justify-content: center;
+	height: 100vh;
 }
