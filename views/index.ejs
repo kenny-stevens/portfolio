@@ -1,0 +1,47 @@
+<% include ./partials/header %>
+
+<!-- Top NavBar -->
+
+<!-- <nav class="navbar fixed-top">
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#brief">Brief</a></li>
+		<li><a href="#stacks">Stacks</a></li>
+		<li><a href="#projects">Projects</a></li>
+	</ul>
+</nav> -->
+
+<!-- Page Content -->
+
+<div class="container">
+	<% include home.ejs %>
+	<% include brief.ejs %>
+	<% include stacks.ejs %>
+	<% include projects.ejs %>
+</div>
+
+<!-- Arrow buttons -->
+
+<div class="arrows up invisible"><span id="up-arrow"><i class="arrow alternate circle up outline icon"></i></span></div>
+<div class="arrows down"><span id="down-arrow"><i class="arrow alternate circle down outline icon"></i></span></div>
+
+<!-- Bottom NavBar -->
+
+<nav class="navbar bottom navbar-expand-lg navbar-light bg-light">	
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">	
+			<a href="https://github.com/kenny-stevens">Github</a>
+		</li>
+		<li class="nav-item">	
+			<a href="https://www.linkedin.com/in/kennystevens1111/">LinkedIn</a>
+		</li>
+		<li class="nav-item">	
+			<a href="#">CV</a>
+		</li>
+		<li class="nav-item">	
+			<a href="/#">Kenny Stevens</a>
+		</li>
+	</ul>
+</nav>
+
+<% include ./partials/footer %>

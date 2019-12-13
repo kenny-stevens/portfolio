@@ -1,5 +1,6 @@
 
 
+
 .heading {
 	text-transform: uppercase;
 	text-align: center;
@@ -10,6 +11,7 @@ body {
 	height: 100vh;
 	background-color: gray;
 }
+
 
 
 /*.container {
@@ -42,13 +44,32 @@ body {
 	}
 }*/
 
-#bottom-arrow-home {
+.arrows {
 	color: white;
+	width: 100%;
 	text-align: center;
-	/*position: bottom-left;*/
+	position: fixed;
+	z-index: 500;
+	font-size: 2rem;
 }
 
-.row {
+#up-arrow, #down-arrow {
+	width: 50px;
+}
+
+.up{
+	top: 10%;
+}
+
+.down {
+	bottom: 10%;
+}
+
+i.arrow {
+	margin: 0;
+}
+
+#home, #projects, #stacks, #brief {
 	flex-direction: column;
 	/*padding-top: 4rem;*/
 	/*flex-direction: center;*/
@@ -57,11 +78,4 @@ body {
 	height: 100vh;
 }
 
-#home {
-	flex-direction: column;
-	/*padding-top: 4rem;*/
-	/*flex-direction: center;*/
-	/*align-items: center;*/
-	justify-content: center;
-	height: 100vh;
-}
+$enable-responsive-font-sizes: true;
