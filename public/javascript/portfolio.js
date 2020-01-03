@@ -43,7 +43,7 @@ $(document).ready(function(){
     $(this).scrollTop(0);
 })
 
-disableScroll()
+// disableScroll()
 
 
 
@@ -65,7 +65,7 @@ function nextPage(){
 		if(page === 3) {
  			$( ".arrows.down" ).addClass( "invisible" )
  			// $( ".arrows.down" ).fadeIn()
- 			enableScroll()
+ 			// enableScroll()
 		}
 
 		if(page === 1) {
@@ -94,7 +94,7 @@ function previousPage(){
 		if(page === 2) {
 		  $( ".arrows.down" ).removeClass( "invisible" )
 		  // $( ".arrows.down" ).fadeOut()
-		  disableScroll()
+		  // disableScroll()
 		}
 	}
 }
@@ -149,4 +149,59 @@ function enableScroll() {
 //     if(!e){ e = window.event; } /* IE7, IE8, Chrome, Safari */
 //     if(e.preventDefault) { e.preventDefault(); } /* Chrome, Safari, Firefox */
 //     e.returnValue = false; /* IE7, IE8 */
+
+
+
+// // ---------------------------------------------------------------------------------------- //
+
+// // Scrolling Navigation
+
+// // ---------------------------------------------------------------------------------------- //
+
+
+// var wheeling;
+// a.wheelStop = true;
+
+// function mouseWheelNav(e) {
+// 	var delta = e.deltaY,
+// 	newSlide = 0;
+
+
+// 	// Determine direction
+// 	if (delta < 0) {
+// 		newSlide = a.activeSection + 1;
+
+// 		// If past last section, stop
+// 		if (newSlide > a.sections.length - 1) {
+// 			return;
+// 		} 
+// 	} else {
+// 		newSlide = a.activeSection - 1;
+		
+// 		// If before first, stop
+// 		if (newSlide < 0) {
+// 			return;
+// 		} 
+// 	}
+
+// 	a.goToSection(newSlide);
 // }
+
+// a.bindWheel = function() {
+// 	//$('body').bind('mousewheel', function(e) {
+// 	$('body').unbind().bind('mousewheel', function(e) {
+// 		if ((!animating) && (a.wheelStop) && (!small)) {
+// 			a.wheelStop = false;
+// 			clearTimeout(wheeling);
+// 			wheeling = setTimeout(function() {
+// 				//console.log('stop..');
+// 				a.wheelStop = true;
+// 			}, 250);  
+// 			mouseWheelNav(e);   
+// 		}  
+// 	});
+// };
+
+// a.bindWheel();
+
+// // }
